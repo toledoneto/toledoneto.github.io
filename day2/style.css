@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.bg1 {
+    /* The background image */
+    background-image: url("img/img2.jpg");
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 700px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+.bg1 h1{
+    color: #0080FF;
+    text-align: center;
+    padding-top: 350px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+ /* barra de navegação */
+.navbar{
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: lightgray;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+/* seção de fotos */
+.bg2{
+    background-color: white;
+}
+
+.bg2 p{
+    text-align: center;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 40px;
+
+}
+
+.bg2 h5{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.bg2 img{
+    /*margin-left: 125px;
+    width: 50%;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* seção de informação */
+.bg3{
+        /* The background image */
+    background-image: url("img/conv.jpg");
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 100%;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+.bg3 h1{
+    text-align: center;
+    color: #DF013A;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.bg3 p{
+    padding-top: 200px;
+}
+
+/* rodapé */
+.contfoot{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#foot{
+    background-color: #2f2f2f;
+    color: white;
+    text-align: center;
+}
+

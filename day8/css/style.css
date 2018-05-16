@@ -1,0 +1,119 @@
+/*
+position fixed -> em relação à tela do navegador
+position relative -> em relação à sua posição original
+position absolute -> em relação à posição do parente que tenha pdade
+position tbm declarada. Nessa opção, a propriedade float é desconsiderada
+
+z-index -> funciona para posicionar o elemento na pilha, quanto
+> o valor, mais alto no layout estará. Só funciona com elementos
+que tenham um atributo position declarado
+*/
+/* ============================================= */
+/* ======= LAYOUTS DELIMITADORES DE ÁREA ======= */
+/* ============================================= */
+/*
+
+/*BARRA DE NAVEGAÇÃO*/
+.navbar{
+  background-color: black;
+  margin: 0px;
+}
+
+.navbar-brand{
+  transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+/*COR DO DROPDOWN QUANDO ABERTO EM RESPONSIVOS*/
+.navbar-nav .open .dropdown-menu {
+    background-color: white;
+}
+
+/*controla o botão collapse*/
+.navbar-default .navbar-toggle{
+  border-color: #28d271;
+
+}
+
+/*controla o botão collapse ao passar o mouse em cima*/
+.navbar-default .navbar-toggle:hover{
+  background-color: #28d271;
+
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #28d271;
+}
+
+
+/*controla o icone do collapse*/
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/*FOTO COVER PRINCIPAL*/
+.cover{
+  margin: 0px;
+  padding: 0px;
+}
+
+.cover img{
+  position: relative;
+  width: 100%;
+}
+
+/*SOBRE A BANDA*/
+.about{
+  padding: 10px 60px;
+}
+
+/*INTEGRANTES*/
+.flex_vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 60px;
+
+}
+
+.flex_horizontal{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.flex_horizontal img{
+  margin: 0px 15px;
+}
+
+#foot{
+  margin-top: 30px;
+    background-color: #2f2f2f;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media all and (max-width: 480px){
+  .flex_horizontal{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .flex_horizontal p{
+    display: none;
+  }
+
+  .flex_horizontal img{
+    margin: 0px 15px;
+    max-width: 90%;
+  }
+}

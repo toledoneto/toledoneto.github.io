@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Portfolio</title>
+    
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css"/>    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  	<!-- Barra de navegação -->
+  	<nav class="navbar navbar-default navbar-fixed-top" >
+  		<div class="container">
+
+		  	<div class="navbar-header">
+		  		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bar-nav">
+		  			<span class="icon-bar"></span>
+		  			<span class="icon-bar"></span>
+		  			<span class="icon-bar"></span>
+
+		  		</button>
+		  		<a href="#" class="navbar-brand">Me</a>	
+		  	</div>
+
+		  	<div class="collapse navbar-collapse" id="bar-nav">
+		  		<ul class="nav navbar-nav navbar-right">
+		  			<li><a href="#photo-area"> WHO </a></li>
+		  			<li><a href="#about-area"> WHAT </a></li>
+		  			<li><a href="#job-area"> WHERE </a></li>
+
+		  			<li class="dropdown">
+		  				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		  					SOCIAL MEDIA <span class="caret"></span> <!-- class caret cria a seta que aponta pra baixo -->
+		  				</a>
+		  				<ul class="dropdown-menu">
+		  					<li><a href="https://www.linkedin.com/in/jos%C3%A9-carlos-s-m-toledo-neto-6055957a/"> Linkedin </a></li>
+		  					<li><a href="https://github.com/toledoneto"> GitHub </a></li>
+		  				</ul>
+		  			</li>
+		  		</ul>
+		  	</div>
+  		</div>
+  	</nav>
+    <!-- Fim da Barra de navegação -->
+
+  	<div class="container-fluid text-center" id="photo-area"> <!-- container fluid ocupa a área toda do container-->
+  		<h3 class="margin">Who Am I?</h3>
+      <img src="img/me.jpg" class="img-circle img-responsive margin" style="display:inline" alt="Me" width="350" height="350">
+      <h3>Computer engineer with passion for data science and behavior economics</h3>
+  	</div>
+
+    <div class="container-fluid text-center" id="about-area">
+      <h3 class="margin">What am I?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium dapibus gravida. Sed leo eros, mattis in tortor ut, porta porttitor urna. Donec viverra, magna a varius tincidunt, dui purus pulvinar magna, in congue lorem orci sit amet felis. Phasellus auctor bibendum placerat. Aliquam rhoncus neque vestibulum justo dignissim, faucibus tempus arcu fringilla.</p>
+      <a href="#" class="btn btn-default btn-lg">
+
+      <span class="glyphicon glyphicon-search"></span>
+
+      Search
+
+      </a>
+    </div>
+
+    <div class="container-fluid text-center" id="job-area">
+
+      <h3 class="margin">Where To Find Me</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium dapibus gravida. Sed leo eros, mattis in tortor ut, porta porttitor urna. Donec viverra.</p>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Job 1</p>
+          <img src="img/img1.jpg" class="img-responsive margin">
+        </div>
+        <div class="col-sm-4">
+          <p>Job 2</p>
+          <img src="img/img2.jpg" class="img-responsive margin">
+        </div>
+        <div class="col-sm-4">
+          <p>Job 3</p>
+          <img src="img/img3.jpg" class="img-responsive margin">
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="container-fluid text-center" id="foot">
+      <p>Made By Toledo Neto</p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

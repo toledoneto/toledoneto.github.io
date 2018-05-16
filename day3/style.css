@@ -1,0 +1,176 @@
+.navbar{
+    border: 0;
+    border-radius: 0;
+    /*margin-bottom: 0;*/
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: lightblue;
+}
+
+#sobre{
+    background-image: linear-gradient(to left, transparent, white),
+                  url("img/igreja.jpg");
+    min-height: 411px;
+    background-position: right;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+}
+
+#sobre p{
+    padding-right: 70%;
+}
+
+#praias{
+    background-image: linear-gradient(to right, transparent, white),
+                  url("img/praia.jpeg");
+    min-height: 400px;
+    background-position: left;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+}
+
+#praias p{
+    padding-left: 50%;
+}
+
+#praias h1{
+    text-align: right;
+}
+
+.bg2 img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 200px;
+}
+.anchor { 
+    padding-top: 50px; 
+}
+
+.contact-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: blue;
+    margin: 10px auto;
+}
+
+.form-wrapper {
+    display: flex;
+    padding: 60px 0;
+}
+
+.form .form-box input {
+    width: 70%;
+    border: 1px solid blue;
+    outline: none;
+    background: #fff;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.form .form-box input {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+    box-shadow: none;
+}
+
+.form .form-box input::placeholder {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.form .form-box textarea::placeholder {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.form .form-box textarea {
+    border: 1px solid blue;
+    outline: none;
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+    width: 70%;
+    box-shadow: none;
+}
+
+.form .form-btn a {
+    color: blue;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+
+.form .form-btn {
+    background: none;
+    border: none;
+    outline: none;
+    width: 388px;
+    margin: 20px auto;
+    background: blue;
+    border-radius: 25px;
+}
+
+.form input:hover {
+    box-shadow: inset 0px 0px 8px blue;
+    transition: border ease-in-out .15s
+}
+
+.form .form-box textarea:hover {
+    box-shadow: inset 0px 0px 8px blue;
+    transition: border ease-in .15s
+}
+
+#foot{
+    background-color: #2f2f2f;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*CONTATO RESPONSIVO*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:45%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+
+.icons{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+.foot{
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,278 @@
+/*BARRA DE NAVEGAÇÃO*/
+.navbar{
+	background-color: #f10f11;
+	margin: 0px;
+}
+
+.navbar-brand{
+	transform: translateX(-50%);
+  	left: 50%;
+  	position: absolute;
+}
+
+/*COR DO DROPDOWN QUANDO ABERTO EM RESPONSIVOS*/
+.navbar-nav .open .dropdown-menu {
+    background-color: white;
+}
+
+/*controla o botão collapse*/
+.navbar-default .navbar-toggle{
+  border-color: #28d271;
+
+}
+
+/*controla o botão collapse ao passar o mouse em cima*/
+.navbar-default .navbar-toggle:hover{
+  background-color: #28d271;
+
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #28d271;
+}
+
+
+/*controla o icone do collapse*/
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+/*GALERIA CARROSEL*/
+.img-responsive {
+    margin: 0 auto;
+}
+
+.gallery{
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+/*BACKGROUND (BG)*/
+.bg2{
+	background-color: #f1f1f1;
+}
+
+#bg2_flex{
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	padding: 0px;
+}
+
+#bg2_flex li{
+	list-style: none;
+	margin: 5px;
+}
+
+/*FLEX RESPONSIVO*/
+@media screen and (max-width: 64em) {
+	
+	#bg2_flex{
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0px;
+
+	}
+
+	#bg2_flex li{
+		margin: 5px;
+		padding: 0px;
+	}
+}
+
+#conteudo-left{
+	/* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+	float:left;
+	/* Cor de fundo da div */
+	/*padding-left: 20%*/
+    margin-bottom: 5px;
+}
+
+#conteudo-right{
+	/* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+	float:right;
+	/* Cor de fundo da div */
+	text-align: left;
+
+}
+
+#sobre_escola{
+    float:left;
+    text-align: left;
+
+}
+
+#foto_escola{
+    float:right;
+    margin-bottom: 10px;
+}
+
+#foto_frente{
+    max-height: 100%;
+    max-width: 100%;
+
+}
+
+#about{
+    margin-bottom: 5px;
+}
+
+#idiomas{
+    margin-bottom: 5px;
+}
+
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/*MAPA RESPONSIVO*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:45%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+
+/*RODAPÉ*/
+footer{
+	background-color: #28d271;
+
+}
+
+/*TIPOGRAFIA*/
+#bg2_flex li{
+	text-align: center;
+
+}
+
+#barra-navegacao{
+	color: #28d271;
+}
+
+/* ============================================= */
+/* =========== formulário de contato =========== */
+/* ============================================= */
+
+.contact-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: blue;
+    margin: 10px auto;
+}
+
+.form-wrapper {
+    display: flex;
+    padding: 60px 0;
+}
+
+.form .form-box input {
+    width: 70%;
+    border: 1px solid blue;
+    outline: none;
+    background: #fff;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.form .form-box input {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+    box-shadow: none;
+}
+
+.form .form-box input::placeholder {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.form .form-box textarea::placeholder {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.form .form-box textarea {
+    border: 1px solid blue;
+    outline: none;
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+    width: 70%;
+    box-shadow: none;
+}
+
+.form .form-btn a {
+    color: blue;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+
+.form .form-btn {
+    background: none;
+    border: none;
+    outline: none;
+    width: 388px;
+    margin: 20px auto;
+    background: blue;
+    border-radius: 25px;
+}
+
+.form input:hover {
+    box-shadow: inset 0px 0px 8px blue;
+    transition: border ease-in-out .15s
+}
+
+.form .form-box textarea:hover {
+    box-shadow: inset 0px 0px 8px blue;
+    transition: border ease-in .15s
+}
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-branco {
+	margin: 5px;
+	border: 2px solid white;
+	background: blue;
+
+}

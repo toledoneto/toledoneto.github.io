@@ -1,0 +1,45 @@
+.navbar{
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: lightgray;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+.container-fluid{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+#photo-area{
+	background-color: #1abc9c;
+	color: white;
+}
+
+#about-area{
+	background-color: #474e5d;
+	color: white;
+}
+
+#job-area{
+	background-color: white;
+	color: #555555;
+}
+
+#foot{
+    background-color: #2f2f2f;
+    color: white;
+}
+
+.margin {
+	margin-bottom: 45px;
+}

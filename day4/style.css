@@ -1,0 +1,343 @@
+.bg_logo{
+	background-color: lightblue;
+}
+
+.bg2{
+	background-color: lightblue;
+}
+
+.end{
+	background-color: lightblue;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: lightblue;
+    color: red;
+}
+
+/*
+flex container
+Flex-direction || Flex-wrap || Flex-flow 
+Justify-content || Align-items || Align-content
+*/
+
+/*
+The Flex Item Properties
+Order || Flex-grow || Flex-shrink || Flex-basis
+*/
+.produtos{	
+	/*retira as pequnas bolinhas dos itens*/
+	list-style: none;
+
+	/*transforma a área em flexbox*/
+	display: flex;
+	flex: none;
+	/*verdes ocupam todo o espaço vertical do seu flex-container*/
+	justify-content: space-around;
+	/*margin-right: 100px;*/
+	/*border: 3px solid red;*/
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.produtos > li{	
+	/*retira as pequnas bolinhas dos itens*/
+	list-style: none;
+
+}
+
+.prod{
+	border: 3px solid white;
+	margin: 0px;
+	padding: 0px;
+	/*retira as pequnas bolinhas dos itens*/
+	list-style: none;
+	
+	/*transforma a área em flexbox*/
+	display: flex;
+	flex-direction: column;
+
+	/*garante que a img e o botão terão a msm largura*/
+	align-items: stretch;
+}
+
+.products{
+	/*retira as pequnas bolinhas dos itens*/
+	list-style: none;
+
+	/*transforma a área em flexbox*/
+	display: flex;
+	flex: none;
+	/*verdes ocupam todo o espaço vertical do seu flex-container*/
+	justify-content: center;
+	/*margin-right: 100px;*/
+}
+
+.products > li{	
+	/*retira as pequnas bolinhas dos itens*/
+	list-style: none;
+
+}
+
+.proc{
+		/*retira as pequnas bolinhas dos itens*/
+	list-style: none;
+	
+	/*transforma a área em flexbox*/
+	display: flex;
+	flex-direction: column;
+
+	/*garante que a img e o botão terão a msm largura*/
+	/*align-items: stretch;*/
+}
+
+.about{
+	
+	/*retira as pequnas bolinhas dos itens*/
+	list-style: none;
+	
+	/*transoforma em flex*/
+	display: flex;
+	/*alinha o conteúdo no centro*/
+	justify-content: center;
+	
+	/*flex: 50%;*/
+    /*determina que o tamanho máximo ocupado pela linha
+    será de x% da área da tela*/
+    max-width: 100%;
+}
+
+.about li{
+	border: 5px solid white;
+	
+/*	faz com que a área do texto seja quadrada, do tamanho
+	da área da foto*/
+	flex-basis: 350px;
+	
+	/*dá um espaço entre a foto e o texto*/
+	margin-left: 5px;
+	background-color: #0000ff;
+}
+
+/*CONTATO RESPONSIVO*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:45%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+
+.icons{
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+}
+
+.foot{
+	background-color: #F5F5F5;
+	display: flex;
+	justify-content: center;
+}
+
+/* ============================================= */
+/* ================ tipografia ================= */
+/* ============================================= */
+
+.bg2 h1{
+	color: white;
+}
+
+.bg2 h3{
+	color: black;
+	padding-left: 15%;
+}
+
+.about p{
+	padding-left: 5px;
+}
+
+.foot h3{
+	color: black;
+	font-size: 10px;
+}
+
+.nomes{
+	background-color: blue;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+
+/* ============================================= */
+/* ============== Responsividade =============== */
+/* ============================================= */
+
+@media screen and (max-width: 64em) {
+	/*INDEX RESPONSIVO*/
+	.produtos{
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0px;
+
+	}
+
+	.prod{
+		margin: 5px;
+		padding: 0px;
+	}
+	
+	/*SOBRE RESPONSIVO*/
+	.about{
+		/*retira as pequnas bolinhas dos itens*/
+		list-style: none;
+		display: flex;
+		
+		/*faz com que a linha se quebre em diversas colunas*/
+		flex-wrap: wrap;
+		padding: 0px;
+
+	}
+
+	.about li{
+		margin: 2px;
+	}
+
+	.about img{
+		max-width: 100%;	
+	}
+
+	/*PRODUTOS RESPONSIVO*/
+	.products{
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0px;
+	}
+
+	.proc{
+		margin: 5px;
+		padding: 0px;
+	}
+}
+
+/* ============================================= */
+/* =========== formulário de contato =========== */
+/* ============================================= */
+
+.contact-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: blue;
+    margin: 10px auto;
+}
+
+.form-wrapper {
+    display: flex;
+    padding: 60px 0;
+}
+
+.form .form-box input {
+    width: 70%;
+    border: 1px solid blue;
+    outline: none;
+    background: #fff;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.form .form-box input {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+    box-shadow: none;
+}
+
+.form .form-box input::placeholder {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.form .form-box textarea::placeholder {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.form .form-box textarea {
+    border: 1px solid blue;
+    outline: none;
+    color: blue;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+    width: 70%;
+    box-shadow: none;
+}
+
+.form .form-btn a {
+    color: blue;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+
+.form .form-btn {
+    background: none;
+    border: none;
+    outline: none;
+    width: 388px;
+    margin: 20px auto;
+    background: blue;
+    border-radius: 25px;
+}
+
+.form input:hover {
+    box-shadow: inset 0px 0px 8px blue;
+    transition: border ease-in-out .15s
+}
+
+.form .form-box textarea:hover {
+    box-shadow: inset 0px 0px 8px blue;
+    transition: border ease-in .15s
+}
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-branco {
+	margin: 5px;
+	border: 2px solid white;
+	background: blue;
+
+}
